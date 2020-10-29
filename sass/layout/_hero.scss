@@ -1,0 +1,29 @@
+.hero {
+    text-align: center;
+    padding: 200px 15px;
+    margin: 0 auto;
+
+    &-overlay  {
+      height: 600px;
+      max-width: 1600px;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)
+      ) ,
+      url("../images/hero/hero.png");
+      background-size: cover;
+    }
+
+    &-title {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.5;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: $text-dark-theme-color;
+      padding-right: 252px;
+      padding-bottom: 30px;
+      padding-left: 252px;
+      }
+      
+  }

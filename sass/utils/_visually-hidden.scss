@@ -1,0 +1,14 @@
+.visualy-hidden {
+position: absolute !important;
+clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+clip: rect(1px, 1px, 1px, 1px);
+padding: 0;
+border: 0;
+width: 0;
+height: 0;
+overflow: hidden;
+}
+
+.hidden-section-title {
+    display: none;
+    }

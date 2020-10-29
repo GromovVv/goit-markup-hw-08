@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  }
+
+.list {
+    list-style: none;
+    &-item {
+      list-style: none;
+    }
+  }
+
+.link {
+    text-decoration: none;
+    
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
