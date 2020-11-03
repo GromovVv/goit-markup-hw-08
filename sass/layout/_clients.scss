@@ -1,15 +1,32 @@
 .clients-cont {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
   }
   
   .clients-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
   }
   
   .clients-list {
     display: flex;
+    flex-wrap: wrap;
+    // flex-basis: calc(100% / 2 - 30px);
+    margin: -15px;
+
     list-style: none;
+
+    @media screen and (min-width: 1200px) {
+      
+    }
 
     &-svg {
       fill: currentColor;
@@ -21,24 +38,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    // width: 210px;
     height: 90px;
     border: 1px solid $icon-fill;
     border-radius: 4px;
     color: $icon-fill;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &k:focus {
+    @media screen and (min-width: 1200px) {
       width: 170px;
       height: 90px;
+    }    
+
+    &:hover,
+    &:focus {
+      // width: 170px;
+      // height: 90px;
       border: 1px solid $accent-color;
       color: $accent-color;
     }
   }
   
+  .clients-item {
+    margin: 15px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
   .clients-item:not(:last-child) {
-    margin-right: 30px;
+
+    @media screen and (min-width: 1200px){
+      
+      margin-right: 30px;
+    }
   }
   
   

@@ -110,20 +110,27 @@ body {
 }
 
 a .logo {
-  margin-left: 0px;
-  margin-right: 90px;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 145px;
 }
 
-.logo-footer {
+@media screen and (min-width: 1200px) {
+  a .logo {
+    margin-left: 0px;
+    margin-right: 90px;
+  }
+}
+
+a .logo-footer {
   margin-bottom: 20px;
 }
 
-.span-logo {
+.logo .span-logo {
   color: #212121;
 }
 
-.span-logo-footer {
+.logo .span-logo-footer {
   color: #FFFFFF;
 }
 
@@ -195,9 +202,16 @@ a .logo {
 
 .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.179;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.167;
+  }
 }
 
 .title-modal {
@@ -368,14 +382,27 @@ a .logo {
 }
 
 .footer-adsress {
-  display: flex;
-  flex-direction: column;
-  margin-right: 70px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-adsress {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+  }
 }
 
 .footer-list {
   display: flex;
+  justify-content: center;
   list-style: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    justify-content: flex-start;
+  }
 }
 
 .footer-list-svg {
@@ -407,12 +434,16 @@ a .logo {
   background-color: #2196F3;
 }
 
-.footer-links {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .footer-links {
+    display: flex;
+  }
 }
 
-.footer-link-list {
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .footer-link-list {
+    margin-right: 93px;
+  }
 }
 
 .footer-title {
@@ -424,16 +455,23 @@ a .logo {
   color: #FFFFFF;
   padding-top: 12px;
   margin-bottom: 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .footer-form-area {
-  display: inline-flex;
+  display: block;
+  text-align: center;
   align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form-area {
+    text-align: left;
+  }
+}
+
 .form-footer-name {
-  margin-right: 12px;
+  margin-bottom: 20px;
   height: 50px;
   width: 358px;
   padding-left: 16px;
@@ -446,6 +484,13 @@ a .logo {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer-name {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 
 .form-footer-name::placeholder {
