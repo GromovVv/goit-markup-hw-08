@@ -155,8 +155,10 @@ a .logo-footer {
   }
 }
 
-.nav .list-item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .nav .list-item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .text-nav {
@@ -192,6 +194,13 @@ a .logo-footer {
 
 .menu-container.is-open {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .social-links {

@@ -12,7 +12,9 @@
     }
 
     & .list-item:not(:last-child) {
-      margin-right: 50px;
+      @media screen and (min-width: 768px) {
+        margin-right: 50px;
+      }
       }
   }
 
@@ -48,4 +50,14 @@
       &.is-open {
         display: block;
       }
+
+    }
+
+    .nav-list {
+
+      @media screen and (min-width: 768px)  {
+        display: flex;
+        align-items: center;
+      }
+
     }
