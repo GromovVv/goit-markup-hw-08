@@ -103,10 +103,17 @@ body {
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 a .logo {
@@ -137,6 +144,15 @@ a .logo-footer {
 .nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    justify-content: left;
+    padding: 0 0;
+  }
 }
 
 .nav .list-item:not(:last-child) {
@@ -154,6 +170,28 @@ a .logo-footer {
 .text-nav-color {
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background-color: violet;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    position: static;
+  }
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 .social-links {
@@ -411,7 +449,7 @@ a .logo-footer {
   fill: #FFFFFF;
 }
 
-.footer-list-item:not(:last-child) {
+.footer-list-icon:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -453,9 +491,15 @@ a .logo-footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding-top: 12px;
+  padding-top: 60px;
   margin-bottom: 20px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-title {
+    padding-top: 12px;
+  }
 }
 
 .footer-form-area {
@@ -473,7 +517,7 @@ a .logo-footer {
 .form-footer-name {
   margin-bottom: 20px;
   height: 50px;
-  width: 358px;
+  width: 100%;
   padding-left: 16px;
   font-weight: 400;
   font-size: 16px;
@@ -490,6 +534,12 @@ a .logo-footer {
   .form-footer-name {
     margin-bottom: 0;
     margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-footer-name {
+    width: 358px;
   }
 }
 
@@ -542,12 +592,22 @@ a .logo-footer {
 }
 
 .header {
-  padding: 24px 0px;
+  position: relative;
+  padding: 0;
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .header {
+    position: static;
+    padding: 24px 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header .container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header-mail-svg {
@@ -580,5 +640,25 @@ a .logo-footer {
 
 .address-list-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-btn .icon-cross {
+  display: none;
+}
+
+.menu-btn.is-open .icon-cross {
+  display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+  display: none;
 }
 /*# sourceMappingURL=portfolio.css.map */

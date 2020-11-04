@@ -32,8 +32,9 @@
       fill: $text-dark-theme-color;
     }
 
-    &-item:not(:last-child) {
+    &-icon:not(:last-child) {
       margin-right: 10px;
+      
     }
 
       &-item:not(:last-child) {
@@ -76,9 +77,13 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: $text-dark-theme-color;
-      padding-top: 12px;
+      padding-top: 60px;
       margin-bottom: 20px;
       text-align: center;
+
+      @media screen and (min-width: 1200px) {
+        padding-top: 12px;
+      }
     }
     
     &-form-area {
@@ -101,7 +106,12 @@
         margin-right: 12px;
       }
       height: 50px;
-      width: 358px;
+      width: 100%;
+
+      @media screen and (min-width: 1200px) {
+        width: 358px;
+      }
+
       padding-left: 16px;
     
       font-weight: 400;
