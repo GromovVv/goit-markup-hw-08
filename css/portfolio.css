@@ -358,15 +358,15 @@ a .logo-footer {
 }
 
 .sort-thumb {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 450px;
   overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
   .sort-thumb {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 450px;
     width: 370px;
     height: 294px;
   }
