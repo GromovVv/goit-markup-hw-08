@@ -1,15 +1,29 @@
 .filter {
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
     padding-bottom: 50px;
+  }
   
   &-list {
-    width: 611px;
     display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
+    flex-wrap: wrap;
+
+    margin-top: -15px;
+    margin-left: -8px;
+
+    @media screen and (min-width: 768px) {
+      width: 611px;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   
   &-button {
+      margin-top: 15px;
+      margin-left: 8px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.625;

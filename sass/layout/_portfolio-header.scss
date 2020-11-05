@@ -1,8 +1,12 @@
 .header-portfolio {
+  outline: 1px solid #ECECEC;
+  @media screen and (min-width: 768px) {
+    
     padding: 24px 0px;
-    outline: 1px solid #ECECEC;
     & .container {
       display: flex;
       align-items: center;
     }
+  }
+
   }
