@@ -5,8 +5,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  height: 581px;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+
+  @media screen and (min-width: 768px) {
+    width: 528px;
+    height: 581px;
+  }
   background-color: $text-dark-theme-color;
   &-close-svg {
     width: 11px;
@@ -112,8 +117,13 @@
     justify-content: center;
     margin-bottom: 30px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
+    font-size: 12px;
+    line-height: 1.167;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.714;
+    }
+    
     letter-spacing: 0.03em;
     color: $secondary-font-color;
     &::before {
@@ -130,8 +140,12 @@
 
   &-link {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
+    font-size: 12px;
+    line-height: 1.167;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.714;
+    }
     letter-spacing: 0.03em;
     color: $accent-color;
     margin-left: 4px;
@@ -182,6 +196,8 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+  padding: 15px;
 }
 .title-modal {
   margin-bottom: 12px;
