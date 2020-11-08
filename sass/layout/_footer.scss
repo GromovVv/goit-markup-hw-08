@@ -5,6 +5,9 @@
       @media screen and (min-width: 768px) {
         width: 50%;
       }
+      @media screen and (min-width: 1200px) {
+        width: 100%;
+      }
     }
     
     background-color: $text-backgrond-color-dark;
@@ -87,7 +90,7 @@
         margin-bottom: 102px;
       }
       @media screen and (min-width: 1200px) {
-
+        width: 50%;
         margin-right: 93px;
       }
     }

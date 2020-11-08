@@ -557,6 +557,12 @@ a .logo-footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-wrap {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer .container {
     display: flex;
@@ -645,6 +651,7 @@ a .logo-footer {
 
 @media screen and (min-width: 1200px) {
   .footer-link-list {
+    width: 50%;
     margin-right: 93px;
   }
 }
