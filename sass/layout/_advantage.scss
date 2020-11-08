@@ -12,27 +12,35 @@
 
       @media screen and (min-width: 768px) {
         display: flex;
+        flex-wrap: wrap;
+        @media screen and (min-width: 1200px) {
+          flex-wrap: nowrap;
+        }
+        margin: -15px;
         
       }
 
       &-item {
         letter-spacing: 0.03em;
-
+        @media screen and (min-width: 768px) {
+          margin: 15px;
+          flex-basis: calc(100% / 2 - 30px);
+        }
+        
         &::before {
           content: "";
           display: block;
-          min-width: 290px;
           height: 120px;
-          background-color: #F5F4FA;
+          background-color: $filter-button-bg;
           border-radius: 4px;
           margin: 0 auto 30px auto;
 
           @media screen and (min-width: 768px) {
-            display: inline-block;
             margin: 0 0 30px 0;
           }
-
+          
           @media screen and (min-width: 1200px) {
+            display: inline-block;
             width: 270px;
           }
         }
@@ -60,14 +68,12 @@
     font-size: 14px;
     line-height: 1.714;
     color: $secondary-font-color;
-    // max-width: 270px; need calc
     margin: 0 auto 30px;
     
 
     @media screen and (min-width: 768px) {
       text-align: left;
-      margin-right: 30px;
-      margin-left: 0;
+      margin: 0;
     }
    }
   

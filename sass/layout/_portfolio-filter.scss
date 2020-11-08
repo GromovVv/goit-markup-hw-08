@@ -1,6 +1,11 @@
 .filter {
   padding-bottom: 40px;
   @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
     padding-bottom: 50px;
   }
   
@@ -12,9 +17,12 @@
     margin-left: -8px;
 
     @media screen and (min-width: 768px) {
-      width: 611px;
+      width: 100%;
       flex-wrap: nowrap;
       justify-content: space-between;
+      @media screen and (min-width: 768px) {
+        justify-content: center;
+      }
       margin-left: auto;
       margin-right: auto;
     }
@@ -22,6 +30,9 @@
   
   &-button {
       margin-top: 15px;
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+      }
       margin-left: 8px;
 
     font-weight: 500;
