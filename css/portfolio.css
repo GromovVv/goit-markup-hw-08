@@ -551,6 +551,12 @@ a .logo-footer {
   background-color: #2F303A;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-wrap {
     width: 50%;
