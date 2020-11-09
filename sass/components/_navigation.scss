@@ -76,7 +76,10 @@
       &.is-open {
         display: block;
       }
-
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+      }
     }
 
     .nav-list {
@@ -87,5 +90,7 @@
         margin-left: 73px;
         margin-right: 73px;
       }
-
+      @media screen and (min-width: 1200px) {
+        margin-right:228px;
+      }
     }
