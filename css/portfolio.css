@@ -166,6 +166,7 @@ a .logo-footer {
 @media screen and (min-width: 768px) {
   .nav .list-item:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -217,12 +218,14 @@ a .logo-footer {
 @media screen and (min-width: 768px) {
   .menu-container {
     position: static;
+    display: flex;
+    box-shadow: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   .menu-container {
-    padding: 15px;
+    padding: 0;
   }
 }
 
@@ -234,6 +237,8 @@ a .logo-footer {
   .nav-list {
     display: flex;
     align-items: center;
+    margin-left: 73px;
+    margin-right: 73px;
   }
 }
 
@@ -307,6 +312,12 @@ a .logo-footer {
 .link-current {
   position: relative;
   padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .link-current {
+    padding-bottom: 38px;
+  }
 }
 
 .link-current::after {
@@ -823,7 +834,9 @@ a .logo-footer {
 @media screen and (min-width: 768px) {
   .container .address-item {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
   }
 }
 
@@ -833,7 +846,7 @@ a .logo-footer {
 
 @media screen and (min-width: 768px) {
   .address-list-item:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
   }
 }
 
@@ -862,5 +875,11 @@ a .logo-footer {
 
 .menu-btn:hover, .menu-btn:focus {
   fill: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

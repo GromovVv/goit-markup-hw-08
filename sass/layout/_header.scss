@@ -40,19 +40,24 @@
 
  .address {
     margin-left: auto;
-
+    @media screen and (min-width: 768px) {
+      
+    }
     .container &-item {
 
       @media screen and (min-width: 768px) {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
       }
     }
 
     &-list-item:not(:last-child) {
         margin-bottom: 16px;
       @media screen and (min-width: 768px) {
-        margin-right: 50px;
+        margin-bottom: 10px;
+        // margin-right: 50px;
       }
      
       }
@@ -83,6 +88,9 @@
     &:hover,
     &:focus {
     fill: $accent-color;
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
     }
   }
 
